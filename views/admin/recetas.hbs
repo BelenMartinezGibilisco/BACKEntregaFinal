@@ -1,0 +1,53 @@
+{{!--Fila 1--}}
+<div class="container" style="margin: 50px auto">
+    <div class="row">
+        <div class="col">
+            <p class="text-rigth logusuario">Hola {{usuario}} !</p>
+            <p> <a href="/admin/login/logout" class="btn btn-sm btnmaic">Cerrar sesión<i class="fa fa-sing-out"></i></a></p>
+        </div>
+    </div>
+</div>
+{{!--Fin Fila 1--}}
+{{! --Fila 2--}}
+
+<div class="row">
+    <div class="col-7 text-center">
+        <h3>Listado de Recetas</h3>   
+    </div>
+    <div class="col-2 text-rigth">
+        <a href="/admin/recetas/agregar" class="btn btn-success"><i class="fa fa-plus"></i>Nuevo</a>
+    </div>
+</div>
+{{!--Fin Fila 2--}}
+{{!-- fila 3--}}
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Ingredientes</th>
+                    <th scope="col">Preparación</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col text-center"></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each recetas}}
+                <tr>
+                    <th scope="row">{{id}}</th>
+                    <td>{{titulo}}</td>                    
+                    <td>{{ingredientes}}</td>
+                    <td>{{preparacion}}</td>
+                    <td>{{{imagen}}}</td> 
+                    <td class="text-center">
+                        <a href="/admin/recetas/modificar/{{id}}" title="Editar" class="btn btn-sm btn-secondary"><i class="fa fa-pencil"></i></a>
+                        <a href="/admin/recetas/eliminar/{{id}}" title="Eliminar" class="btn btn-sm btn-secondary"><i class="fa fa-trash"></i></a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

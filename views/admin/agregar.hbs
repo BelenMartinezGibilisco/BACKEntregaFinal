@@ -1,0 +1,26 @@
+<div class="container" style="margin:100px auto" >
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Agregar una nueva receta</h4>
+            <form action="/admin/recetas/agregar" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Titulo" name="titulo">
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" placeholder="Ingredientes" name="ingredientes"></textarea>
+                </div>
+                <div>
+                    <textarea  class="form-control" type="text" class="form-control" placeholder="Preparación" name="preparacion"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Imagen:<input type="file" name="imagen" id="imagen"></label>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{#if error}}
+    <h5>{{message}}</h5> 
+{{/if}}

@@ -1,0 +1,76 @@
+/**    font-family: 'Great Vibes', cursive;
+
+    font-family: 'Open Sans', sans-serif; 
+    https://www.canva.com/es_mx/aprende/50-paletas-colores-visualmente-impactantes-que-inspiran/*/
+
+    body{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    header{
+        background-image: url(../images/fondo\ nav.jpg);
+        padding: 10px 0;
+        text-align: center;
+      
+    }
+
+    header h1{
+        color: #DF744A;
+        font-family: 'Great Vibes', cursive;
+        text-shadow: 5px 5px 0  #d9dfe5;
+        font-size: 100px;
+        font-weight: 100;
+        text-decoration: underline;
+        display: inline-block;
+        margin-left: 10px;
+
+    }
+
+    
+    footer{
+        background-color: #ccc;
+        clear: both;
+        color: #333;
+        text-align: center;
+        padding: 5px 0;
+        margin-top: 20px;
+    }
+
+    .holder{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    
+    h2{
+        color: #DCB239;
+        font-weight: 400;
+        font-weight: bold;
+    }
+
+    .containerlogin {
+        max-width: 40%;
+        
+    }
+
+    .login {
+        margin: 20px;
+    }
+
+    .butentrar {
+        margin-left: 20px;
+    }
+   
+    .logusuario {
+        color: #DF744A;
+        font-size: 25px;
+        font-weight: bold;
+
+    }
+
+    .btnmaic {
+        background-color: #DCB239;
+        color: #333;
+        font-weight: bold;        
+    }
